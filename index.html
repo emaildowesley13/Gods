@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta name="monetization" content="$ilp.uphold.com/qgAbQjfAJYqk">
 <script src="js/group.js"  type="text/javascript"></script>
 <style>
@@ -7,12 +8,20 @@ h1 {
   font-size: 72px;
 }
 </style>
+</head>
 <body onload="myFunction()">
 <h3>⏰<b id="demo"></b> 📡<b id="demo2"></b> ⏭<b id="demo3"></h3>
 
 <script>
 	let myWindow;
 	setInterval(function(){
+		function load_js() {
+			var head= document.getElementsByTagName('head')[0];
+			var script= document.createElement('script');
+			script.src= 'js/group.js';
+			head.appendChild(script);
+		}
+		load_js();
 		IntTh = ('0' + new Date().getHours().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
 		IntTm = ('0' + new Date().getMinutes().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
 		IntTs = ('0' + new Date().getSeconds().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
