@@ -15,14 +15,24 @@ h1 {
 <script>
 	let myWindow;
 	setInterval(function(){
-		function load_js() {
-			var head= document.getElementsByTagName('head')[0];
-			var script= document.createElement('script');
-			script.src= 'js/group.js';
-			script.type= 'text/javascript';
-			head.appendChild(script);
+		load_js1();
+		function load_js1() {
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.src = 'js/group.js';
+			script.type = 'text/javascript';
+			head.removeChild(script);
+			load_js2();
+			
 		}
-		load_js();
+		function load_js2() {
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.src = 'js/group.js';
+			script.type = 'text/javascript';
+			head.appendChild(script);
+			
+		}
 		IntTh = ('0' + new Date().getHours().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
 		IntTm = ('0' + new Date().getMinutes().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
 		IntTs = ('0' + new Date().getSeconds().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
