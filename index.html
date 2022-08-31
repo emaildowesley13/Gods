@@ -15,16 +15,7 @@ h1 {
 <script>
 	let myWindow;
 	setInterval(function(){
-		load_js1();
-		function load_js1() {
-			var head = document.getElementsByTagName('head')[0];
-			var script = document.createElement('script');
-			script.src = 'js/group.js';
-			script.type = 'text/javascript';
-			head.removeChild(script);
-			load_js2();
-			
-		}
+		load_js2();
 		function load_js2() {
 			var head = document.getElementsByTagName('head')[0];
 			var script = document.createElement('script');
