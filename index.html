@@ -19,7 +19,7 @@ h1 {
 		IntTm = ('0' + new Date().getMinutes().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
 		IntTs = ('0' + new Date().getSeconds().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
 		document.getElementById("demo").innerHTML = IntTh + ':' + IntTm + ':' + IntTs;
-		if(IntTm === '20'){
+		if(IntTm + ':' + IntTs === '20:00'){
 			location.reload();
 		}
 		if(IntTh + ':' + IntTm + ':' + IntTs === '10:00:00'){
