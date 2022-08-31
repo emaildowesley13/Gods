@@ -1,7 +1,7 @@
 hDefault = "duckexza"
 h10 = "bagual_serrano"
 h11 = "vk47tv"
-h12 = "duckexza"
+h12 = "blackira_"
 h13 = "jaquellinemello"
 h14 = "ygorgm"
 h15 = "Tmacumba"
