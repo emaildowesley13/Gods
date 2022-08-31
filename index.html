@@ -453,21 +453,21 @@ h1 {
 		IntTh = ('0' + new Date().getHours().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"})).slice(-2)
 		NowF = "myFunction" + IntTh
 		switch (NowF) {
-			case "myFunction10": myFunction10(); document.getElementById("demo2").innerHTML = h10; break;
-			case "myFunction11": myFunction11(); document.getElementById("demo2").innerHTML = h11; break;
-			case "myFunction12": myFunction12(); document.getElementById("demo2").innerHTML = h12; break;
-			case "myFunction13": myFunction13(); document.getElementById("demo2").innerHTML = h13; break;
-			case "myFunction14": myFunction14(); document.getElementById("demo2").innerHTML = h14; break;
-			case "myFunction15": myFunction15(); document.getElementById("demo2").innerHTML = h15; break;
-			case "myFunction16": myFunction16(); document.getElementById("demo2").innerHTML = h16; break;
-			case "myFunction17": myFunction17(); document.getElementById("demo2").innerHTML = h17; break;
-			case "myFunction18": myFunction18(); document.getElementById("demo2").innerHTML = h18; break;
-			case "myFunction19": myFunction19(); document.getElementById("demo2").innerHTML = h19; break;
-			case "myFunction20": myFunction20(); document.getElementById("demo2").innerHTML = h20; break;
-			case "myFunction21": myFunction21(); document.getElementById("demo2").innerHTML = h21; break;
-			case "myFunction22": myFunction22(); document.getElementById("demo2").innerHTML = h22; break;
-			case "myFunction23": myFunction23(); document.getElementById("demo2").innerHTML = h23; break;
-			default: myFunctionDefault(); document.getElementById("demo2").innerHTML = hDefault;
+			case "myFunction10": myFunction10(); document.getElementById("demo2").innerHTML = h10; document.getElementById("demo3").innerHTML = h11; break;
+			case "myFunction11": myFunction11(); document.getElementById("demo2").innerHTML = h11; document.getElementById("demo3").innerHTML = h12; break;
+			case "myFunction12": myFunction12(); document.getElementById("demo2").innerHTML = h12; document.getElementById("demo3").innerHTML = h13; break;
+			case "myFunction13": myFunction13(); document.getElementById("demo2").innerHTML = h13; document.getElementById("demo3").innerHTML = h14; break;
+			case "myFunction14": myFunction14(); document.getElementById("demo2").innerHTML = h14; document.getElementById("demo3").innerHTML = h15; break;
+			case "myFunction15": myFunction15(); document.getElementById("demo2").innerHTML = h15; document.getElementById("demo3").innerHTML = h16; break;
+			case "myFunction16": myFunction16(); document.getElementById("demo2").innerHTML = h16; document.getElementById("demo3").innerHTML = h17; break;
+			case "myFunction17": myFunction17(); document.getElementById("demo2").innerHTML = h17; document.getElementById("demo3").innerHTML = h18; break;
+			case "myFunction18": myFunction18(); document.getElementById("demo2").innerHTML = h18; document.getElementById("demo3").innerHTML = h19; break;
+			case "myFunction19": myFunction19(); document.getElementById("demo2").innerHTML = h19; document.getElementById("demo3").innerHTML = h20; break;
+			case "myFunction20": myFunction20(); document.getElementById("demo2").innerHTML = h20; document.getElementById("demo3").innerHTML = h21; break;
+			case "myFunction21": myFunction21(); document.getElementById("demo2").innerHTML = h21; document.getElementById("demo3").innerHTML = h22; break;
+			case "myFunction22": myFunction22(); document.getElementById("demo2").innerHTML = h22; document.getElementById("demo3").innerHTML = h23; break;
+			case "myFunction23": myFunction23(); document.getElementById("demo2").innerHTML = h23; document.getElementById("demo3").innerHTML = hDefault; break;
+			default: myFunctionDefault(); document.getElementById("demo2").innerHTML = hDefault; document.getElementById("demo3").innerHTML = h10;
 		}
 	}
 	function closeWin() {
